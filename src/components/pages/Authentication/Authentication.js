@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import CommonButton from "../../common/CommonButton/CommonButton";
 import Example from "../../Example";
 import NotificationBell from "../../common/CommonButton/NotificationBell/NotificationBell";
 import BasicMenu from "../../common/CommonButton/Basicmenu/BasicMenu";
 
+import Header from "../../Header/Header";
 const Authentication = () => {
-  const buttonStyles = {
-    fontSize: 20,
-    fontWwight: 700,
-    backgroundColor: "red",
-  };
-  return (
-    <Grid xs={8}>
 
-      Authentication<NotificationBell
-       iconColor="error"
-       badgeContent={5}
-       />
+  
+  
+
+
+  return (
+    <Grid item xs={8}>
+
+      Authentication
+
+      <Header/>
     
-     <BasicMenu/>
+     
     
     </Grid>
   );
