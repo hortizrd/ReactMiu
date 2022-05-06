@@ -1,28 +1,21 @@
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import CommonButton from "../../common/CommonButton/CommonButton";
-import Example from "../../Example";
-import NotificationBell from "../../common/CommonButton/NotificationBell/NotificationBell";
-import BasicMenu from "../../common/CommonButton/Basicmenu/BasicMenu";
+import BasicCard from "../../common/CommonButton/BasicCard/BasicCard";
+import SearchBar from "../../common/CommonButton/SearchBar/SearchBar";
 
-import Header from "../../Header/Header";
 const Authentication = () => {
+  return(
+<>
 
-  
-  
+<Grid item xs={8} sx={{ marginLeft: '320px' }}>
+    <br />
+    <BasicCard header={<SearchBar/>} />
+  </Grid>
+</>
+  )
 
-
-  return (
-    <Grid item xs={8}>
-
-      Authentication
-
-      <Header/>
-    
-     
-    
-    </Grid>
-  );
+ 
 };
 
 export default Authentication;
