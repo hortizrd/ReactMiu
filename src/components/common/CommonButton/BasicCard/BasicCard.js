@@ -9,6 +9,7 @@ const BasicCard = ({header,content}) => {
     <Card>
        {header}
           <CardContent>
+            hola
          {content}
           </CardContent>
        
