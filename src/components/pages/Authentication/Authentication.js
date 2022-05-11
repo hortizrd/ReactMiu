@@ -7,7 +7,11 @@ import BasicCard from "../../common/CommonButton/BasicCard/BasicCard";
 import SearchBar from "../../common/CommonButton/SearchBar/SearchBar";
 import Box from '@mui/material/Box';
 import { Typography } from "@mui/material";
+
+
 const Authentication = () => {
+  
+  
   const getHeader = () => {
     const handleChange = (value) => {
       console.log(value);
@@ -28,7 +32,8 @@ const Authentication = () => {
         borderBottom: "1px solid rgba(0,0,0,0.12)",
       },
       addUserButtom: {
-        fontSize: "1.05rem",
+        fontSize: "1.00rem",
+       
       },
     };
     return (
@@ -36,10 +41,10 @@ const Authentication = () => {
         <SearchBar
           placeholder="Search by email address, phone number, or user UID"
           onChange={(event) => handleChange(event.target.value)}
-          SearchBarWidth="720px"
+          SearchBarWidth='720px'
         />
         <Box>
-         
+        
           <CommonButton
            variant="contained"
            onClick={addUser}
@@ -73,7 +78,7 @@ const Authentication = () => {
 
   return (
     <>
-      <Grid item xs={9} sx={{ marginLeft: "320px",backgroundColor:'#eaeff1',padding:'48px 32px',minHeight:'calc(100vh - 166px)',position:'relative' }}>
+      <Grid item xs={12} sx={{ marginLeft: "320px",backgroundColor:'#fff',padding:'48px 32px',minHeight:'calc(100vh - 166px)',position:'relative' }}>
         <br />
         <BasicCard 
         header={getHeader()}
