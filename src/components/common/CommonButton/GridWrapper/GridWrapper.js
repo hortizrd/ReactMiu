@@ -6,7 +6,7 @@ const GridWrapper = ({children}) => {
   return (
     <Grid
       item
-      xs={12}
+      xs={8}
       sx={{gridWrapperStyles}} >
       {children}
     </Grid>
